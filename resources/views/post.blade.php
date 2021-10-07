@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 
 <head>
     {{$post->title}}
@@ -13,3 +13,18 @@
 </p>
 </body>
     </html>
+-->
+
+@extends('layouts.app')
+
+@section('title',$post->title)
+
+@section('content')
+<a href="/posts"> Posts page</a>
+    <h2>
+        {{$post->title}}
+</h2>
+<p>
+{{$post->body}}
+</p>
+@endsection
