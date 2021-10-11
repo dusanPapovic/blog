@@ -26,7 +26,7 @@
     @foreach($posts as $post)
     <li>
         <a href="{{route('post',['post'=> $post->id])}}">
-            {{$post->title}}
+            {{$post->title}} {{$post->comments->count()}}
         </a>
     </li>
     @endforeach
